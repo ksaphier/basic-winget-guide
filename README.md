@@ -1,4 +1,3 @@
-
 # Guía de Uso Básico de Winget
 
 ## Introducción
@@ -16,18 +15,18 @@ Para listar las aplicaciones preinstaladas en Windows, utiliza el siguiente coma
 winget list
 ```
 
-### Búsqueda de Aplicaciones
-Para buscar aplicaciones disponibles en `winget`, usa el comando `winget search` seguido del nombre del paquete:
-
-```bash
-winget search <nombre_del_paquete>
-```
-
 ### Desinstalación de Aplicaciones
 Para eliminar aplicaciones no deseadas, usa el comando `winget uninstall` seguido del nombre del paquete. Recuerda usar comillas si el nombre del paquete contiene espacios:
 
 ```bash
 winget uninstall "<nombre_del_paquete>"
+```
+
+### Búsqueda de Aplicaciones
+Para buscar aplicaciones disponibles en `winget`, usa el comando `winget search` seguido del nombre del paquete:
+
+```bash
+winget search <nombre_del_paquete>
 ```
 
 ### Instalación de Aplicaciones
@@ -44,26 +43,12 @@ Para actualizar todas las aplicaciones gestionadas por `winget`, utiliza:
 winget upgrade --all
 ```
 
-## Script de PowerShell para Instalación/Desinstalación Masiva
 
-### Creación del Script
-A continuación se muestra un ejemplo de cómo crear un script de PowerShell para instalar o desinstalar múltiples aplicaciones, manejando correctamente los nombres de paquetes con espacios.
+## Scripts de PowerShell para Instalación/Desinstalación Masiva
 
-#### Ejemplo de Script
-```powershell
-# Array de aplicaciones para instalar/desinstalar
-$apps = @("app1", "app2", "app con espacios")
+Dentro de este mismo repositorio, encontrarás dos scripts de PowerShell diseñados para facilitar la instalación y desinstalación masiva de aplicaciones.
 
-# Para instalar aplicaciones
-foreach ($app in $apps) {
-    winget install "`"$app`""
-}
-
-# Para desinstalar aplicaciones
-foreach ($app in $apps) {
-    winget uninstall "`"$app`""
-}
-```
+Estos scripts están pensados para ser personalizados según tus necesidades, permitiéndote optimizar tu flujo de trabajo al configurar una nueva instalación de Windows.
 
 ## Conclusión
-Esta guía proporciona los conceptos básicos para empezar a usar `winget` para gestionar aplicaciones en Windows. Personaliza el script de PowerShell según tus necesidades para optimizar tu flujo de trabajo.
+Esta guía proporciona los conceptos básicos para empezar a usar `winget` para gestionar aplicaciones en Windows.
