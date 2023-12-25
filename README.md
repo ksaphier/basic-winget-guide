@@ -4,7 +4,7 @@
 Esta guía proporciona una visión general del uso del comando `winget` para configurar una nueva instalación de Windows, incluyendo la instalación, desinstalación y actualización de aplicaciones.
 
 ## Primer Uso de Winget
-La primera vez que utilices `winget`, se te pedirá aceptar los términos y condiciones del servicio. Asegúrate de leerlos y aceptarlos para continuar utilizando `winget`.
+La primera vez que utilices `winget`, se te pedirá aceptar los términos y condiciones del servicio. Asegúrate aceptarlos para continuar utilizando `winget`.
 
 ## Configuración Inicial de Windows con Winget
 
