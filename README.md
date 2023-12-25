@@ -19,21 +19,21 @@ winget list
 Para eliminar aplicaciones no deseadas, usa el comando `winget uninstall` seguido del nombre del paquete. Recuerda usar comillas si el nombre del paquete contiene espacios:
 
 ```bash
-winget uninstall "<nombre_del_paquete>"
+winget uninstall "nombre del paquete"
 ```
 
 ### Búsqueda de Aplicaciones
 Para buscar aplicaciones disponibles en `winget`, usa el comando `winget search` seguido del nombre del paquete:
 
 ```bash
-winget search <nombre_del_paquete>
+winget search "nombre del paquete"
 ```
 
 ### Instalación de Aplicaciones
 Para instalar nuevas aplicaciones, utiliza `winget install` seguido del nombre del paquete. Usa comillas si el nombre del paquete contiene espacios:
 
 ```bash
-winget install "<nombre_del_paquete>"
+winget install "nombre del paquete"
 ```
 
 ### Mantenimiento y Actualización de Aplicaciones
@@ -42,7 +42,6 @@ Para actualizar todas las aplicaciones gestionadas por `winget`, utiliza:
 ```bash
 winget upgrade --all
 ```
-
 
 ## Scripts de PowerShell para Instalación/Desinstalación Masiva
 
